@@ -13,3 +13,5 @@ if ! grep -q $dir/cron/update.sh /etc/crontab; then
 	echo "setting up crontab entry for $dir/cron/update.sh"
 	echo "*/30 * * * * root $dir/cron/update.sh" >>/etc/crontab
 fi
+
+apt-get install ntfs-3g exfat-fuse
